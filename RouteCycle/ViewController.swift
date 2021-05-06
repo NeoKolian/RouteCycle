@@ -79,10 +79,10 @@ class ViewController: UIViewController {
     private func setupPlacemark(adressPlace: String) {
         
         let geocoder = CLGeocoder()
-        geocoder.geocodeAddressString(adressPlace) { [self ] (placemarks, error) in
+        geocoder.geocodeAddressString(adressPlace) { [self] (placemarks, error) in
             if let error = error {
                 print(error)
-                errorAlert(title: "Error", message: "Something go wrong")
+                errorAlert(title: "error", message: "something go wrong")
                 return
             }
             
@@ -124,7 +124,7 @@ class ViewController: UIViewController {
             }
             
             guard let responce = responce else {
-                self.errorAlert(title: "error", message: "Something goes wrong")
+                self.errorAlert(title: "error", message: "something goes wrong")
                 return
             }
             

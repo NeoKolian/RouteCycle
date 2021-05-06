@@ -22,7 +22,7 @@ extension UIViewController {
             guard let text = textfieldText?.text else { return }
             completionHandler(text)
         }
-        let alertCancel = UIAlertAction(title: "cansel", style: .default) { (action) in
+        let alertCancel = UIAlertAction(title: "cancel", style: .default) { (action) in
             print("action")
         }
         
@@ -35,7 +35,7 @@ extension UIViewController {
     func errorAlert(title: String, message: String) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertOkay = UIAlertAction(title: "Okay", style: .default)
+        let alertOkay = UIAlertAction(title: "okay", style: .default)
         
         alertController.addAction(alertOkay)
         
